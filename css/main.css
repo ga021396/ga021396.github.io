@@ -1,10 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+html{
+	margin:0;
+	padding:0;
+	}
 body{
 	font-family: 'Noto Sans TC', sans-serif;
 	}
 .header{
+	overflow:hidden;
 	height:100vh;
 	background-image:url(../images/image02.jpg);
 	background-size:cover;
@@ -17,6 +22,7 @@ body{
 	background-color:rgba(0,0,0,.4);
 	}
 .about{
+	overflow:hidden;
 	background-color:rgba(0,0,0,0.9);
 	height:400px;
 	width:100%;
@@ -59,21 +65,24 @@ body{
 	}
 
 .skills{
+	overflow:hidden;
 	background-color:rgba(255,255,255,0.9);
 	height:auto;
 	width:100%;
 	}
 .con{
+	overflow:hidden;
 	background-image:url(../images/image06.jpg);
 	background-size:cover;
 	background-position:center center;
 	height:auto;
-	width:100VW;
+	width:auto;
 	}
 .con-cover{
+	overflow:hidden;
 	background-color:rgba(255,255,255,.4);
 	height:100%;
-	width:100%;
+	width:auto;
 	}
 /* sub */
 .mytext{
@@ -211,4 +220,7 @@ a,a:link{
 	}
 a:hover{
 	color:#000;
+	}
+.footer{
+	overflow:hidden;
 	}
