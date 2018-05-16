@@ -21,19 +21,19 @@ $(document).ready(function(e) {
 	 
 
 	$('#about').click(function(e){
-		$(window).scrollTop($('.about').offset().top-$('.navbar-brand').height()*1.8);
+		$(window).scrollTop($('.about').offset().top-$('.navbar-brand').height());
 		})
 	$('#edu').click(function(e){
-		$(window).scrollTop($('.edu').offset().top-$('.navbar-brand').height()*1.8);
+		$(window).scrollTop($('.edu').offset().top-$('.navbar-brand').height());
 		})
 	$('#exp').click(function(e){
-		$(window).scrollTop($('.exp').offset().top-$('.navbar-brand').height()*1.8);
+		$(window).scrollTop($('.exp').offset().top-$('.navbar-brand').height());
 		})
 	$('#skills').click(function(e){
-		$(window).scrollTop($('.skills').offset().top-$('.navbar-brand').height()*1.8);
+		$(window).scrollTop($('.skills').offset().top-$('.navbar-brand').height());
 		})
 	$('#con').click(function(e){
-		$(window).scrollTop($('.con').offset().top-$('.navbar-brand').height()*1.8);
+		$(window).scrollTop($('.con').offset().top-$('.navbar-brand').height());
 		})
 		
 	$(window).scroll(function(){
