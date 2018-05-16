@@ -69,7 +69,7 @@ body{
 	}
 .con{
 	background-image:url(../images/image06.jpg);
-	background-position:center;
+	background-position:center center;
 	background-size:cover;
 	height:auto;
 	width:100%;
