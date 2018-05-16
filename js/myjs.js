@@ -21,16 +21,16 @@ $(document).ready(function(e) {
 	 
 
 	$('#about').click(function(e){
-		$(window).scrollTop($('.about').offset().top-$('.navbar-brand').height());
+		$(window).scrollTop($('.about').offset().top-10);
 		})
 	$('#edu').click(function(e){
-		$(window).scrollTop($('.edu').offset().top-$('.navbar-brand').height());
+		$(window).scrollTop($('.edu').offset().top-20);
 		})
 	$('#exp').click(function(e){
-		$(window).scrollTop($('.exp').offset().top-$('.navbar-brand').height());
+		$(window).scrollTop($('.exp').offset().top-30);
 		})
 	$('#skills').click(function(e){
-		$(window).scrollTop($('.skills').offset().top-$('.navbar-brand').height());
+		$(window).scrollTop($('.skills').offset().top-40);
 		})
 	$('#con').click(function(e){
 		$(window).scrollTop($('.con').offset().top-$('.navbar-brand').height());
