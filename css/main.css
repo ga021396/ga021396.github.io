@@ -51,10 +51,6 @@ body{
 	.exp{
 		width:70%;
 		transition:all ease 0.8s;}
-	.header{
-	background-size:cover;
-	background-position:center center;
-	}
 	}
 @media(max-width:480px){
 	.exp{
@@ -69,10 +65,10 @@ body{
 	}
 .con{
 	background-image:url(../images/image06.jpg);
-	background-position:center center;
 	background-size:cover;
+	background-position:center center;
 	height:auto;
-	width:100%;
+	width:100VW;
 	}
 .con-cover{
 	background-color:rgba(255,255,255,.4);
