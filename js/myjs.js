@@ -42,10 +42,10 @@ $(document).ready(function(e) {
 		//$('.fn').fadeIn(1000);
 		//}	
 		
-		if($(window).scrollTop()>$('.about').offset().top/3 && $('.about').hasClass('hidden')){
+		if($(window).scrollTop()>$('.about').offset().top/4 && $('.about').hasClass('hidden')){
 		$('.about').removeClass('hidden');
 		}
-		else if($(window).scrollTop()<$('.about').offset().top/3){
+		else if($(window).scrollTop()<$('.about').offset().top/4){
 			$('.about').addClass('hidden');
 			}
 		
