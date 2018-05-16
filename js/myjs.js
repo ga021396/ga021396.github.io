@@ -21,19 +21,19 @@ $(document).ready(function(e) {
 	 
 
 	$('#about').click(function(e){
-		$(window).scrollTop($('.about').offset().top-10);
+		$(window).scrollTop($('.about').offset().top);
 		})
 	$('#edu').click(function(e){
-		$(window).scrollTop($('.edu').offset().top-20);
+		$(window).scrollTop($('.edu').offset().top);
 		})
 	$('#exp').click(function(e){
-		$(window).scrollTop($('.exp').offset().top-30);
+		$(window).scrollTop($('.exp').offset().top);
 		})
 	$('#skills').click(function(e){
-		$(window).scrollTop($('.skills').offset().top-40);
+		$(window).scrollTop($('.skills').offset().top);
 		})
 	$('#con').click(function(e){
-		$(window).scrollTop($('.con').offset().top-$('.navbar-brand').height());
+		$(window).scrollTop($('.con').offset().top);
 		})
 		
 	$(window).scroll(function(){
