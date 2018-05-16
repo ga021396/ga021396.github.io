@@ -7,14 +7,12 @@ body{
 .header{
 	height:100vh;
 	background-image:url(../images/image02.jpg);
-	background-attachment:fixed;
 	background-size:cover;
 	background-position:center center;
 	}
 .cover{
 	z-index:3;
-	position:absolute;
-	height:100VH;
+    height:100%;
 	width:100%;
 	background-color:rgba(0,0,0,.4);
 	}
@@ -54,7 +52,6 @@ body{
 		width:70%;
 		transition:all ease 0.8s;}
 	.header{
-	background-attachment:local;
 	background-size:cover;
 	background-position:center center;
 	}
