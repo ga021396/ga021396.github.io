@@ -1,5 +1,25 @@
 // JavaScript Document
 $(document).ready(function(e) {
+	
+	 $(window).resize(function() {
+	 var wdth=$(window).width();
+		if(wdth>768){
+		$('.header').css("background-attachment","fixed");
+		$('.con').css("background-attachment","fixed");
+		}
+		
+	 })
+	  $(function() {
+       var wdth=$(window).width();
+		if(wdth>768){
+		$('.header').css("background-attachment","fixed");
+		$('.con').css("background-attachment","fixed");
+		}
+    /*  網頁節點讀取完成後隨即執行的程式  */
+
+})
+	 
+
 	$('#about').click(function(e){
 		$(window).scrollTop($('.about').offset().top);
 		})

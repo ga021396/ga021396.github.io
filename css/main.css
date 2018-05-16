@@ -69,7 +69,6 @@ body{
 	}
 .con{
 	background-image:url(../images/image06.jpg);
-	background-attachment:fixed;
 	background-position:center;
 	background-size:cover;
 	height:auto;
