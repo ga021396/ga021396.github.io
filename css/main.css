@@ -26,8 +26,6 @@ body{
 	background-color:rgba(0,0,0,0.9);
 	height:400px;
 	width:100%;
-	transform-style:preserve-3d;
-	transform:perspective(800px);
 	}
 .edu{
 	overflow:hidden;
@@ -87,6 +85,8 @@ body{
 /* sub */
 .mytext{
 	max-width:480px;
+	transform-style:preserve-3d;
+	transform:perspective(800px);
 	}
 .exp .mytext{
 	transform-style:preserve-3d;
