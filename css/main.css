@@ -11,7 +11,7 @@ body{
 .header{
 	overflow:hidden;
 	height:100vh;
-	background-image:url(../images/image02.jpg);
+	background-image:url(../images/img-me.jpg);
 	background-size:cover;
 	background-position:center center;
 	}
