@@ -1,0 +1,22 @@
+.card {
+  border: 1px solid white;
+  width: 100%;
+  padding: 16px;
+  padding-top: 36px;
+  position: relative;
+  margin-bottom: 32px;
+  .header {
+    font-size: 16px;
+    position: absolute;
+    background-color: white;
+    height: 20px;
+    line-height: 20px;
+    width: 30%;
+    top: -1px;
+    left: -10px;
+    color: black;
+    font-weight: 700;
+    transform: skewX(-30deg);
+    padding-left: 16px;
+  }
+}
