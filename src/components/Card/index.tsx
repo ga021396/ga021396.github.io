@@ -4,11 +4,12 @@ import "./card.scss";
 type CardProps = {
   title: string;
   children: ReactNode;
+  className?: string;
 };
 
-function Card({ title, children }: CardProps) {
+function Card({ title, children, className }: CardProps) {
   return (
-    <div className="card">
+    <div className={`card ${className}`}>
       <div className="header">{title}</div>
       {children}
     </div>

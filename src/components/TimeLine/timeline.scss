@@ -1,0 +1,167 @@
+.link {
+  width: 2px;
+  background-color: white;
+  position: absolute;
+  left: 30%;
+  animation-name: linkAni;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  &:last-child {
+    animation-name: lastLinkAni;
+  }
+}
+
+.dot {
+  z-index: 5;
+  transform: scale(0);
+  border-radius: 50%;
+  background-color: black;
+  border: 2px solid white;
+  position: absolute;
+  left: calc(30% - 7px);
+  width: 16px;
+  height: 16px;
+  animation-name: dotAni;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.linkAni1 {
+  top: 0;
+  animation-delay: 0.5s;
+}
+
+.dotAni1 {
+  top: 92px;
+  animation-delay: 1s;
+}
+
+.linkAni2 {
+  top: 100px;
+  animation-delay: 2s;
+}
+
+.dotAni2 {
+  top: 192px;
+  animation-delay: 2.5s;
+}
+
+.linkAni3 {
+  top: 200px;
+  animation-delay: 3.5s;
+}
+
+.dotAni3 {
+  top: 292px;
+  animation-delay: 4s;
+}
+
+.linkAni4 {
+  top: 300px;
+  animation-delay: 5s;
+}
+
+.dotAni4 {
+  top: 392px;
+  animation-delay: 5.5s;
+}
+
+.linkAni5 {
+  top: 400px;
+  animation-delay: 6.5s;
+}
+
+.dotAni5 {
+  top: 492px;
+  animation-delay: 7s;
+}
+
+@keyframes linkAni {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100px;
+  }
+}
+
+@keyframes dotAni {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes lastLinkAni {
+  from {
+    height: 0;
+  }
+  to {
+    height: 300px;
+  }
+}
+
+.itemRight {
+  opacity: 0;
+  position: absolute;
+  left: 35%;
+  animation-name: item;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.itemLeft {
+  opacity: 0;
+  position: absolute;
+  text-align: right;
+  right: 75%;
+  animation-name: item;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.itemLeftAni1 {
+  top: 88px;
+  animation-delay: 1.5s;
+}
+.itemRightAni1 {
+  top: 80px;
+  animation-delay: 1.5s;
+}
+
+.itemLeftAni2 {
+  top: 188px;
+  animation-delay: 3s;
+}
+.itemRightAni2 {
+  top: 180px;
+  animation-delay: 3s;
+}
+
+.itemLeftAni3 {
+  top: 288px;
+  animation-delay: 4.5s;
+}
+.itemRightAni3 {
+  top: 280px;
+  animation-delay: 4.5s;
+}
+
+.itemLeftAni4 {
+  top: 388px;
+  animation-delay: 6s;
+}
+.itemRightAni4 {
+  top: 380px;
+  animation-delay: 6s;
+}
+
+@keyframes item {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -3,17 +3,17 @@ import "./status.scss";
 import Card from "../../components/Card";
 import Skill from "../../components/Skill";
 
-import { BASICINFO, SKILLS, LANGUAGE } from "../../data/data";
+import { BASICINFO, SKILLS, LANGUAGE, CONTACT } from "../../data/data";
 
 function Status() {
   return (
     <div className="status">
       <Card title={"STATUS"}>
         <div className="basicInfo">
-          <image className="photo" />
+          <div className="photo" />
           <div className="textContainer">
             {BASICINFO.map((item) => (
-              <p>
+              <p key={item.title}>
                 <span>{item.title}:</span>
                 <span>{item.content}</span>
               </p>
@@ -22,9 +22,10 @@ function Status() {
         </div>
       </Card>
 
-      <Card title={"SKILLS"}>
+      <Card title={"SKILLS"} className="cardAnime1">
         {SKILLS.map((item) => (
           <Skill
+            key={item.title}
             title={item.title}
             content={item.content}
             icon={item.icon}
@@ -32,12 +33,20 @@ function Status() {
         ))}
       </Card>
 
-      <Card title={"LICENSES"}>
+      <Card title={"CERTIFICATE"} className="cardAnime2">
         {LANGUAGE.map((item) => (
+          <Skill title={item.title} content={item.content}></Skill>
+        ))}
+      </Card>
+
+      <Card title={"CONTACT"} className="cardAnime3">
+        {CONTACT.map((item) => (
           <Skill
+            key={item.title}
             title={item.title}
             content={item.content}
             icon={item.icon}
+            link={item.link}
           ></Skill>
         ))}
       </Card>

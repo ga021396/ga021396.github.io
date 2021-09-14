@@ -1,10 +1,14 @@
 .card {
+  opacity: 0;
   border: 1px solid white;
   width: 100%;
   padding: 16px;
   padding-top: 36px;
   position: relative;
   margin-bottom: 32px;
+  &:last-child {
+    margin-bottom: 0;
+  }
   .header {
     font-size: 16px;
     position: absolute;
@@ -18,5 +22,31 @@
     font-weight: 700;
     transform: skewX(-30deg);
     padding-left: 16px;
+  }
+  animation-name: card;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.cardAnime1 {
+  animation-delay: 0.3s;
+}
+
+.cardAnime2 {
+  animation-delay: 0.6s;
+}
+
+.cardAnime3 {
+  animation-delay: 1s;
+}
+
+@keyframes card {
+  from {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
