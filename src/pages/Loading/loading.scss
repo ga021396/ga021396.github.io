@@ -1,0 +1,68 @@
+.loading {
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  animation-name: loading;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loading {
+  50% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+}
+
+.loadingText {
+  opacity: 0;
+  animation-name: loadingText;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 2;
+}
+
+@keyframes loadingText {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.underLine {
+  animation-name: fillLine;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  height: 1px;
+  background-color: white;
+}
+
+@keyframes fillLine {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
