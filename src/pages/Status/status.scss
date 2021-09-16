@@ -1,3 +1,5 @@
+@import "../../styles/mixins.scss";
+
 .status {
   height: 100%;
   width: 70%;
@@ -27,7 +29,7 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@include media(sp) {
   .status {
     width: 100%;
     padding: 16px;

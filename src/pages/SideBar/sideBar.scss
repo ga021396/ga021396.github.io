@@ -1,3 +1,5 @@
+@import "../../styles/mixins.scss";
+
 .sideBar {
   width: 30%;
   height: 50%;
@@ -21,7 +23,7 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@include media(sp) {
   .sideBar {
     display: none;
   }

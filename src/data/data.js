@@ -1,9 +1,6 @@
-function calculateAge(birthday) {
-  // birthday is a date
-  var ageDifMs = Date.now() - birthday.getTime();
-  var ageDate = new Date(ageDifMs); // miliseconds from epoch
-  return Math.abs(ageDate.getUTCFullYear() - 1970);
-}
+import calculateAge from "../helpers/calculateAge";
+
+export const TAB = ["STATUS", "PROFILE", "PROJECT"];
 
 export const BASICINFO = [
   { title: "NAME", content: "CHI FENG (CLIFF)" },
@@ -51,12 +48,10 @@ export const SKILLS = [
 
 export const LANGUAGE = [
   {
-    //icon: <i className="fas fa-language"></i>,
     title: "JLPT",
     content: "N1 certificate, 154(44/60/50).",
   },
   {
-    //icon: <i className="fas fa-globe"></i>,
     title: "TOEIC",
     content: "gold certificate, 885(445/440).",
   },
@@ -112,5 +107,41 @@ export const EXPERIENCE = [
     title: "Rakuten Travel",
     contnet: "Application Engineer",
     date: "2020.03",
+  },
+];
+
+export const PROJECTS = [
+  {
+    link: "https://ga021396.github.io/mota-bro-ver/",
+    title: "MOTA-BOR-VER",
+    content: (
+      <>
+        this is alter from the classic flash game "MOTA", made for Twitch
+        streamer
+        <a
+          href="https://www.youtube.com/watch?v=O0zQ-b1v4Sc&ab_channel=%E7%9F%AD%E6%9A%AB%E5%AD%98%E6%94%BE"
+          className="aLink"
+          target="_blank"
+        >
+          "sam1268"
+        </a>
+        , "butterflyouo".
+      </>
+    ),
+  },
+  {
+    link: "https://ga021396.github.io/Vue-AnimeFilter/",
+    title: "ANIME-FILTER",
+    content: "this is my first project to practice Vue.js.",
+  },
+  {
+    link: "https://ga021396.github.io/magic-pants/",
+    title: "MAGIC-PANTS",
+    content: `this is a memory game made for Twitch streamer "bbbb87".`,
+  },
+  {
+    link: "https://ga021396.github.io/steamer-test/",
+    title: "STREAMER-TEST",
+    content: `this is a psychological test made for Twitch streamer "sam1268".`,
   },
 ];

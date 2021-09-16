@@ -1,6 +1,12 @@
 import "./sideBar.scss";
 
-import { TAB } from "../../App";
+import { TAB } from "../../data/data";
+
+const getTextFromTab: { [key: string]: string } = {
+  STATUS: "Status",
+  PROFILE: "Profile",
+  PROJECT: "Project",
+};
 
 type SideBarProps = {
   handleSwitchTab: (tabName: string) => void;
@@ -22,24 +28,14 @@ function SideBar({
 
   return (
     <div className={menu ? "spSideBar" : "sideBar"}>
-      <div
-        onClick={() => handleClick(TAB[0])}
-        className={tab === TAB[0] ? "active" : ""}
-      >
-        Status
-      </div>
-      <div
-        onClick={() => handleClick(TAB[1])}
-        className={tab === TAB[1] ? "active" : ""}
-      >
-        Profile
-      </div>
-      <div
-        onClick={() => handleClick(TAB[2])}
-        className={tab === TAB[2] ? "active" : ""}
-      >
-        Project
-      </div>
+      {TAB.map((item: string) => (
+        <div
+          onClick={() => handleClick(item)}
+          className={tab === item ? "active" : ""}
+        >
+          {getTextFromTab[item]}
+        </div>
+      ))}
     </div>
   );
 }

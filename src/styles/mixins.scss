@@ -1,0 +1,17 @@
+@mixin media($deviceTypes...) {
+  @each $deviceType in $deviceTypes {
+    @if $deviceType == sp {
+      @media (max-width: 734px) {
+        @content;
+      }
+    } @else if $deviceType == tl {
+      @media (max-width: 1024px) and (min-width: 744px) {
+        @content;
+      }
+    } @else if $deviceType == pc {
+      @media (min-width: 1024px) {
+        @content;
+      }
+    }
+  }
+}

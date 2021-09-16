@@ -1,35 +1,29 @@
 .navBar {
-  display: none;
+  transition: 0.5s all;
+  opacity: 0.9;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 50px;
+
+  background-color: white;
+  color: black;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  -webkit-clip-path: polygon(
+    25% 0%,
+    75% 0%,
+    100% 50%,
+    75% 100%,
+    25% 100%,
+    0% 50%
+  );
 }
 
-@media only screen and (max-width: 600px) {
-  .navBar {
-    transition: 0.5s all;
-    opacity: 0.9;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 44px;
-    width: 50px;
-
-    background-color: white;
-    color: black;
-    position: absolute;
-    bottom: 16px;
-    right: 16px;
-    -webkit-clip-path: polygon(
-      25% 0%,
-      75% 0%,
-      100% 50%,
-      75% 100%,
-      25% 100%,
-      0% 50%
-    );
-  }
-
-  .isMenuOpen {
-    background-color: black;
-    color: white;
-  }
+.isMenuOpen {
+  background-color: black;
+  color: white;
 }

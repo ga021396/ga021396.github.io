@@ -53,12 +53,12 @@
     text-decoration: underline;
   }
 
-  animation-name: item;
+  animation-name: projectItem;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
-@keyframes item {
+@keyframes projectItem {
   from {
     transform: translateY(-200%);
     opacity: 0;
