@@ -4,6 +4,7 @@ import "./App.scss";
 import SideBar from "./pages/SideBar";
 import Status from "./pages/Status";
 import Profile from "./pages/Profile";
+import Project from "./pages/Project";
 import NavBar from "./pages/NavBar";
 import Loading from "./pages/Loading";
 
@@ -33,6 +34,7 @@ function App() {
       <NavBar handleSwitchMenu={handleSwitchMenu} menu={menu} />
       {tab === TAB[0] && <Status />}
       {tab === TAB[1] && <Profile />}
+      {tab === TAB[2] && <Project />}
     </div>
   );
 }

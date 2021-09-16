@@ -8,7 +8,9 @@ import { ABOUT, EXPERIENCE } from "../../data/data";
 function Profile() {
   return (
     <div className="profile">
-      <Card title={"ABOUT"}>{ABOUT}</Card>
+      <Card title={"ABOUT"} className="noMargin">
+        {ABOUT}
+      </Card>
       <div className="tree">
         {EXPERIENCE.map((item, index) => (
           <TimeLine

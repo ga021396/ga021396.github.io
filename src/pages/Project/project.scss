@@ -1,0 +1,26 @@
+.project {
+  height: 100%;
+  width: 70%;
+  padding: 64px;
+  overflow-y: scroll;
+  color: white;
+  .image1 {
+    background-image: url("../../image/mota.png");
+  }
+  .image2 {
+    background-image: url("../../image/pants.png");
+  }
+  .image3 {
+    background-image: url("../../image/streamer.png");
+  }
+  .aLink {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .project {
+    width: 100%;
+    padding: 16px;
+  }
+}

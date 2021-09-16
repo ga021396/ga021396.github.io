@@ -33,7 +33,7 @@ function Status() {
         ))}
       </Card>
 
-      <Card title={"CERTIFICATE"} className="cardAnime2">
+      <Card title={"LICENSE"} className="cardAnime2">
         {LANGUAGE.map((item) => (
           <Skill title={item.title} content={item.content}></Skill>
         ))}
