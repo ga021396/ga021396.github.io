@@ -20,6 +20,14 @@ function Project() {
         </p>
       </Item>
 
+      <Item
+        imageClass="image4"
+        link="https://ga021396.github.io/Vue-AnimeFilter/"
+      >
+        <p className="title">ANIME-FILTER</p>
+        <p className="content">this is my first project to practice Vue.js.</p>
+      </Item>
+
       <Item imageClass="image2" link="https://ga021396.github.io/magic-pants/">
         <p className="title">MAGIC-PANTS</p>
         <p className="content">
