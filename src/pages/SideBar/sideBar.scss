@@ -28,12 +28,8 @@
 
 .spSideBar {
   @include flexBoxCenter(column);
-  position: absolute;
-  z-index: 6;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  @include screenCover;
+  z-index: $zIndex-sideBar;
   background-color: white;
   color: black;
 

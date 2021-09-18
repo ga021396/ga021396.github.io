@@ -2,12 +2,8 @@
 
 .loading {
   @include flexBoxCenter(column);
-  position: absolute;
-  z-index: 20;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  @include screenCover;
+  z-index: $zIndex-loading;
   background-color: black;
   color: white;
 
@@ -22,12 +18,12 @@
   }
   99% {
     opacity: 0;
-    z-index: 20;
+    z-index: $zIndex-loading;
   }
   100% {
     opacity: 0;
     display: none;
-    z-index: -1;
+    z-index: $zIndex-hidden;
   }
 }
 

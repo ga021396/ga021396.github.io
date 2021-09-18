@@ -1,3 +1,5 @@
+@import "../../styles";
+
 .link {
   width: 2px;
   background-color: white;
@@ -12,7 +14,7 @@
 }
 
 .dot {
-  z-index: 5;
+  z-index: $zIndex-timeLine;
   transform: scale(0);
   border-radius: 50%;
   background-color: black;
