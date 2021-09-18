@@ -1,4 +1,4 @@
-@import "../../styles/mixins.scss";
+@import "../../styles";
 
 .status {
   height: 100%;
@@ -8,23 +8,21 @@
 }
 
 .basicInfo {
-  display: flex;
+  @include flexBoxCenter;
 
   .photo {
+    @include resetImgBackground;
     height: 150px;
     width: 150px;
-    margin-right: 16px;
+    margin-right: $spacing-m;
     background-image: url("../../image/traveller.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .textContainer {
     width: calc(100% - 200px);
     p {
-      padding-bottom: 8px;
-      display: flex;
-      justify-content: space-between;
+      @include flexBoxCenter(row, space-between, flex-start);
+      padding-bottom: $spacing-base;
     }
   }
 }
@@ -32,18 +30,15 @@
 @include media(sp) {
   .status {
     width: 100%;
-    padding: 16px;
+    padding: $spacing-m;
   }
   .basicInfo {
     .textContainer {
       width: 100%;
       flex-shrink: 3;
-      p {
-        display: flex;
-        justify-content: space-between;
-        span {
-          text-align: right;
-        }
+
+      span {
+        text-align: right;
       }
     }
   }

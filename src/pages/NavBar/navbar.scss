@@ -1,18 +1,18 @@
+@import "../../styles";
+
 .navBar {
+  @include flexBoxCenter;
   transition: 0.5s all;
   opacity: 0.9;
   z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 44px;
   width: 50px;
 
   background-color: white;
   color: black;
   position: absolute;
-  bottom: 16px;
-  right: 16px;
+  bottom: $spacing-m;
+  right: $spacing-m;
   -webkit-clip-path: polygon(
     25% 0%,
     75% 0%,

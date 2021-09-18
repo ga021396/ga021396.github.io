@@ -22,7 +22,7 @@ function Status() {
         </div>
       </Card>
 
-      <Card title={"SKILLS"} className="cardAnime1">
+      <Card title={"SKILLS"}>
         {SKILLS.map((item) => (
           <Skill
             key={item.title}
@@ -33,13 +33,13 @@ function Status() {
         ))}
       </Card>
 
-      <Card title={"LICENSE"} className="cardAnime2">
+      <Card title={"LICENSE"}>
         {LANGUAGE.map((item) => (
           <Skill title={item.title} content={item.content}></Skill>
         ))}
       </Card>
 
-      <Card title={"CONTACT"} className="cardAnime3">
+      <Card title={"CONTACT"}>
         {CONTACT.map((item) => (
           <Skill
             key={item.title}

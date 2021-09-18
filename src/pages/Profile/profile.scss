@@ -1,4 +1,4 @@
-@import "../../styles/mixins.scss";
+@import "../../styles";
 
 .profile {
   height: 100%;
@@ -15,7 +15,7 @@
 @include media(sp) {
   .profile {
     width: 100%;
-    padding: 16px;
+    padding: $spacing-m;
   }
 }
 

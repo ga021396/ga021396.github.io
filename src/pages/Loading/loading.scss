@@ -1,4 +1,7 @@
+@import "../../styles";
+
 .loading {
+  @include flexBoxCenter(column);
   position: absolute;
   z-index: 20;
   top: 0;
@@ -7,10 +10,6 @@
   right: 0;
   background-color: black;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 
   animation-name: loading;
   animation-duration: 3s;

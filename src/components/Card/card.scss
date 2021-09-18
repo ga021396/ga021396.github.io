@@ -1,16 +1,18 @@
+@import "../../styles";
+
 .card {
   opacity: 0;
   border: 1px solid white;
   width: 100%;
-  padding: 16px;
+  padding: $spacing-m;
   padding-top: 36px;
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: $spacing-xl;
   &:last-child {
     margin-bottom: 0;
   }
   .header {
-    font-size: 16px;
+    font-size: $font-subtitle;
     position: absolute;
     background-color: white;
     height: 20px;
@@ -21,23 +23,17 @@
     color: black;
     font-weight: 700;
     transform: skewX(-30deg);
-    padding-left: 16px;
+    padding-left: $spacing-m;
   }
   animation-name: card;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-}
 
-.cardAnime1 {
-  animation-delay: 0.3s;
-}
-
-.cardAnime2 {
-  animation-delay: 0.6s;
-}
-
-.cardAnime3 {
-  animation-delay: 1s;
+  @for $i from 1 to 4 {
+    &:nth-child(#{$i}) {
+      animation-delay: 0.3s * $i - 0.3s;
+    }
+  }
 }
 
 @keyframes card {

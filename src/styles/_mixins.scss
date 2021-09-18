@@ -15,3 +15,16 @@
     }
   }
 }
+
+@mixin resetImgBackground {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@mixin flexBoxCenter($dir: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $dir;
+  align-items: $align;
+  justify-content: $justify;
+}

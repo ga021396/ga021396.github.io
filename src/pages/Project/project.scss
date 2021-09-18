@@ -1,4 +1,4 @@
-@import "../../styles/mixins.scss";
+@import "../../styles";
 
 .project {
   height: 100%;
@@ -26,6 +26,6 @@
 @include media(sp) {
   .project {
     width: 100%;
-    padding: 16px;
+    padding: $spacing-m;
   }
 }
