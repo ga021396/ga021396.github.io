@@ -1,7 +1,7 @@
 @import "../../styles";
 
 .profile {
-  height: 100%;
+  height: 100vh;
   width: 70%;
   padding: 64px;
   overflow-y: hidden;
@@ -15,7 +15,8 @@
 @include media(sp) {
   .profile {
     width: 100%;
-    padding: $spacing-m;
+    padding: $spacing-xl $spacing-m;
+    overflow-y: scroll;
   }
 }
 
