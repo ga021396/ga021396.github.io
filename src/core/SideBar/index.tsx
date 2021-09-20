@@ -10,24 +10,19 @@ const getTextFromTab: { [key: string]: string } = {
 
 type SideBarProps = {
   handleSwitchTab: (tabName: string) => void;
-  handleSwitchMenu: (value: boolean) => void;
+  onClose: () => void;
   tab: string;
-  menu: boolean;
+  isOpen: boolean;
 };
 
-function SideBar({
-  handleSwitchTab,
-  handleSwitchMenu,
-  tab,
-  menu,
-}: SideBarProps) {
+function SideBar({ handleSwitchTab, onClose, tab, isOpen }: SideBarProps) {
   const handleClick = (tab: string) => {
     handleSwitchTab(tab);
-    handleSwitchMenu(false);
+    onClose();
   };
 
   return (
-    <div className={menu ? "spSideBar" : "sideBar"}>
+    <div className={isOpen ? "spSideBar" : "sideBar"}>
       {TAB.map((item: string) => (
         <div
           onClick={() => handleClick(item)}
