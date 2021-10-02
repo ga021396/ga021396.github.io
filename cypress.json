@@ -1,0 +1,19 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "chromeWebSecurity": false,
+  "env": {},
+  "experimentalStudio": true,
+  "defaultCommandTimeoit": 60000,
+  "video": false,
+  "retries": 1,
+  "screenshotOnRunFailure": false,
+  "testFiles": ["main/test.spec.js"],
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/results",
+    "overwrite": false,
+    "html": true,
+    "json": true,
+    "timestamp": "yyyy-mm-dd_HHMMss"
+  }
+}
