@@ -22,7 +22,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App" data-testid="App">
       <Loading />
       <SideBar
         handleSwitchTab={handleSwitchTab}

@@ -27,6 +27,7 @@ function SideBar({ handleSwitchTab, onClose, tab, isOpen }: SideBarProps) {
         <div
           onClick={() => handleClick(item)}
           className={tab === item ? "active" : ""}
+          key={item}
         >
           {getTextFromTab[item]}
         </div>

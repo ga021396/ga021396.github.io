@@ -35,7 +35,11 @@ function Status() {
 
       <Card title={"LICENSE"}>
         {LANGUAGE.map((item) => (
-          <Skill title={item.title} content={item.content}></Skill>
+          <Skill
+            title={item.title}
+            content={item.content}
+            key={item.title}
+          ></Skill>
         ))}
       </Card>
 
