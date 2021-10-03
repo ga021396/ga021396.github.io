@@ -7,7 +7,7 @@ import { BASICINFO, SKILLS, LANGUAGE, CONTACT } from "../../data/data";
 
 function Status() {
   return (
-    <div className="status">
+    <div className="status" data-testid="status-wrapper">
       <Card title={"STATUS"}>
         <div className="basicInfo">
           <div className="photo" />
